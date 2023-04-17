@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Rkfurnishingstore.com
+    // Link to css
+    link(defer rel='stylesheet' href='../static/style.css')
+    // Link mediaquery css
+    link(defer rel='stylesheet' href='../static/contact.css')
+    // Box Icon Import Css
+    link(defer href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet')
+    // Fav Icon
+    link(rel='icon' href='../static/image/mainfav.icon.png' type='image/png')
+  body
+    // Scroll Top
+    a.scroll-top(href='#home')
+      i.bx.bx-up-arrow-alt 
+  // Header
+  header
+    .nav.container
+      // Menu Icon
+      .menu-icon
+        .line1
+        .line2
+        .line3
+      // Nav List
+      ul.navbar
+        li
+          a(href='/') Home
+        li
+          a(href='#categories') Categories
+        li
+          a(href='#about') About
+        li
+          a(href='/contact') Get In Touch
+      // Logo
+      a.logo(href='/')
+        | RK FURNISHING
+        span .
+      // Nav Icons
+      .nav-icons
+        i#user-icon.bx.bx-user
+      // Login Form(User)
+      .login-form
+        // Form
+        form(action='')
+          h2 Login To Continue
+          input(type='email' name='' id='' placeholder='Enter Your Email' required='')
+          input(type='password' name='' id='' placeholder='Enter Your Password' required='')
+          a(href='#') Forget Password?
+          input.btn(type='submit' value='Log In')
+          a(href='#') Create account
+
+  section
+    h2.gettouch Get In Touch<br>Complete furniture for your home.
+    h3
+      a#touchtohome(href='/') Home
+      |  / 
+      span Get Enquiry
+  .enquiry
+    .form
+      h3 ContactUs 
+      p We will get back to you asap
+      form(action='/contact', class="myForm" , method='post')
+        input#name.form-input(type='text' name='name' placeholder='Enter Your name')
+        input#phone.form-input(type='phone' name='phone' placeholder='Enter Your Phone')
+        input#email.form-input(type='email' name='email' placeholder='Enter Your email')
+        textarea#text.form-input(type='text' name='query' cols='30' rows='10' placeholder='Ellaborate your Query')
+        button.btn.btn-sm.btn-dark Submit
+  section
+    iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.048262703861!2d73.29748951499505!3d28.023000682662264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393fdd8e4023f445%3A0x595dcf741d7166af!2sRK%20Furnishing!5e0!3m2!1sen!2sin!4v1662774361736!5m2!1sen!2sin" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"')
+  section.warrantybox
+        h2 All our furniture is made on order here
+        p
+          | We focus more on our product standards rather than compromising in quality and price
+        .warranty
+        h2 Warranty
+        p Policy &amp; Condition:
+        ul
+          li 5 Years Warranty on our every product
+          li First 1 year Free service product related issue
+  // Copyright
+  .copyright
+    p &copy; www.rkfurnishingstore.com | All Right Reserved 
+  // Link to JS
+  script(defer src='static/Frontend Js/main.js')
